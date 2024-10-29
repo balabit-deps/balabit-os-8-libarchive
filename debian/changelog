@@ -1,3 +1,13 @@
+libarchive (3.4.0-2ubuntu1.4) focal-security; urgency=medium
+
+  * SECURITY UPDATE: code execution via negative copy length
+    - debian/patches/CVE-2024-20696.patch: protect
+      copy_from_lzss_window_to_unp() in
+      libarchive/archive_read_support_format_rar.c.
+    - CVE-2024-20696
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 29 Oct 2024 10:06:37 +0100
+
 libarchive (3.4.0-2ubuntu1.3) focal-security; urgency=medium
 
   * SECURITY UPDATE: NULL pointer dereference
