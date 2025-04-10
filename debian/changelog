@@ -1,3 +1,12 @@
+libarchive (3.4.0-2ubuntu1.5) focal-security; urgency=medium
+
+  * SECURITY UPDATE: DoS via crafted TAR archive
+    - debian/patches/CVE-2025-25724.patch: make sure ltime is valid in
+      tar/util.c.
+    - CVE-2025-25724
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Apr 2025 13:38:38 -0400
+
 libarchive (3.4.0-2ubuntu1.4) focal-security; urgency=medium
 
   * SECURITY UPDATE: code execution via negative copy length
